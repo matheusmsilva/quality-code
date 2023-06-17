@@ -1,0 +1,46 @@
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: calc((100% / 12) * $i - 1rem);
+        }
+    }
+
+    .c-field {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+    input,
+    select {
+        background-color: #ffffff;
+        border: 0;
+        border-radius: 0.25rem;
+        height: 2.5rem;
+        font-size: 18px;
+        padding: 4px 16px;
+        color: black;
+
+        &::placeholder {
+            color: rgb(165, 165, 165);
+        }
+    }
+
+    label {
+        margin-bottom: 0.25rem;
+        font-weight: bold;
+    }
+
+    button {
+        background-color: #4F2D92;
+        transition: all 250ms ease;
+
+        &:hover {
+            filter: brightness(80%);
+        }
+    }
+}

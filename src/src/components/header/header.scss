@@ -1,0 +1,28 @@
+.c-header{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    .icons{
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+        font-size: 35px;
+    }
+
+    img{
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    .text-logo{
+        font-weight: bold;
+        font-size: 35px;
+        span{
+            color: #4F2D92;            
+        }
+        margin: 0;
+    }
+    
+    background-color: rgba(0, 0, 0, 0.752);
+}
+
